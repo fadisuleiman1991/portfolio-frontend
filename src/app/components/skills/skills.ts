@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Skill } from '../../data/CV';
 
 @Component({
   selector: 'app-skills',
@@ -7,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './skills.scss',
 })
 export class Skills {
-
+  @Input() skills: Skill[] = [];
 }

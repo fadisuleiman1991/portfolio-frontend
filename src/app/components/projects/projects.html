@@ -1,26 +1,21 @@
 <section id="projects" class="py-5">
   <div class="container">
-    <div class="row">
-      <div class="col-lg-12 text-center mb-5">
-        <h2 class="section-title">Projects</h2>
+        <h2 class="text-center section-title">Projects</h2>
         <hr class="divider">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-4 col-md-6 mb-4" *ngFor="let project of projects">
-        <div class="card h-100">
-          <img [src]="project.image" class="card-img-top" [alt]="project.title">
-          <div class="card-body">
-            <h5 class="card-title">{{project.title}}</h5>
-            <p class="card-text">{{project.description}}</p>
-            <div class="mb-3">
-              <span class="badge bg-primary me-1" *ngFor="let tech of project.technologies">{{tech}}</span>
+    <div>
+      @for (project of projects; track project) {
+          <div class="card shadow-sm mb-3">
+            <div class="card-body">
+              <h5>{{ project.name }}: </h5>
+              <div class="row">
+              <span>{{project.startDate}} - {{project.endDate}}</span>
+              <span>Description: {{project.description}}</span>
+              <span>Role: {{project.role}}</span>
+              <span>Technologies: {{project.technologies}}</span>
+              </div>
             </div>
-            <a [href]="project.demoUrl" class="btn btn-primary me-2" target="_blank">Live Demo</a>
-            <a [href]="project.codeUrl" class="btn btn-outline-primary" target="_blank">View Code</a>
           </div>
-        </div>
-      </div>
+    }
     </div>
   </div>
 </section>
