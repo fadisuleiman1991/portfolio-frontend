@@ -1,10 +1,18 @@
 export interface CV {
   personalInfo: {
     name: string;
+    jobTitle: string;
+    gender: string;
+    maritalStatus: string;
+    birthDate: string;
+    birthPlace: string;
+    nationality: string;
+    profileImage: string;
+  };
+  contact: {
     email: string;
     phone: string;
     address: string;
-    profileImage?: string;
   };
   skills: Skill[];
   experiences: Experience[];
@@ -14,12 +22,12 @@ export interface CV {
   languages: Language[];
   trainings: Training[];
   educations: Education[];
-}
+};
 
 export interface Skill {
     name: string;
     content: string[];
-}
+};
 
 export interface Experience
 {
@@ -30,7 +38,7 @@ export interface Experience
     endDate: string | "Present";
     responsibilities?: string[];
     isSecondaryJob?: boolean;
-}
+};
 
 export interface Project
 {
@@ -42,7 +50,7 @@ export interface Project
     technologies: string[];
     link?: string;
     sourceCode?: string;
-}
+};
 
 export interface Activity
 {
@@ -50,25 +58,25 @@ export interface Activity
     startDate: string;
     endDate: string | "Present";
     responsibilities?: string[];
-}
+};
 
 export interface OnlineProfile {
     name: string;
     link: string;
-}
+};
 
 export interface Language
 {
     name: string;
-    level: string
-}
+    level: string;
+};
 
 export interface Training {
     name: string;
     institution: string;
     startDate: string;
     endDate: string | "Present";
-}
+};
 
 export interface Education
 {
@@ -77,5 +85,5 @@ export interface Education
     institution: string;
     startDate: string;
     endDate: string | "Present";
-}
+};
 

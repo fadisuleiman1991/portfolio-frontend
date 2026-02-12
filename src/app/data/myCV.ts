@@ -3,10 +3,18 @@ import { CV, Skill } from "./CV";
 export const myCV: CV = {
   personalInfo: {
     name: "Fadi Suleiman",
+    jobTitle: "Webentwickler",
+    gender: "männlich",
+    maritalStatus: "verheiratet",
+    birthDate: "27.03.1991",
+    birthPlace: "Damaskus / Syrien",
+    nationality: "deutsch",
+    profileImage: "src/profileImage.jpg",
+  },
+  contact: {
     email: "fadi.suleiman.de@gmail.com",
     phone: "+49 1577 3594045",
     address: "Friedrich-Ebert-Str. 254, 47139 Duisburg",
-    profileImage: "src/profileImage.jpg",
   },
   skills: [
     {
