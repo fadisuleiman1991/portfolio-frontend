@@ -8,10 +8,11 @@ import { Projects } from "./components/projects/projects";
 import { Contact } from "./components/contact/contact";
 import { Footer } from "./components/footer/footer";
 import { myCV } from './data/myCV';
+import { CvAsPDF } from "./components/cv-as-pdf/cv-as-pdf";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Header, Hero, About, Skills, Projects, Contact, Footer],
+  imports: [RouterOutlet, Header, Hero, About, Skills, Projects, Contact, Footer, CvAsPDF],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
