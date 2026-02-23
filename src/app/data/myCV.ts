@@ -28,7 +28,7 @@ export const myCV: CV = {
     },
     {
         name: "Database",
-        content: ["Microsoft SQL-Server"],
+        content: ["Microsoft SQL-Server", "PostgreSQL", "MySQL"],
     },
     {
         name: "Test",
@@ -40,7 +40,7 @@ export const myCV: CV = {
     },
     {
         name: "VCS",
-        content: ["Git"],
+        content: ["Git", "GitHub", "GitLab"],
     },
     {
         name: "DevOps",
@@ -48,7 +48,7 @@ export const myCV: CV = {
     },
     {
         name: "IDEs",
-        content: ["Web Storm", "IntelliJ IDEA", "Visual Studio"],
+        content: ["VSC", "Web Storm", "IntelliJ IDEA", "Visual Studio"],
     },
   ],
   experiences: [
@@ -94,6 +94,16 @@ export const myCV: CV = {
   ],
   projects: [
     {
+        name: "Portfolio-Website",
+        startDate: "Seit 02.2026",
+        endDate: "11.2025",
+        description: "Persönlichen Portfolio-Website zur Präsentation meiner Projekte, technischen Fähigkeiten und beruflichen Erfahrungen als Webentwickler",
+        role: "Softwareentwickler (Eigenprojekt)",
+        technologies: ["Angular", "ASP.NET", "Microsoft SQL-Server", "Docker"],
+        link: "https://fadisuleiman.com",
+        sourceCode: "https://github.com/fadisuleiman1991/portfolio-frontend",
+    },
+    {
         name: "Mobilitätsservice-Managementsystem",
         startDate: "06.2025",
         endDate: "11.2025",
@@ -137,7 +147,7 @@ export const myCV: CV = {
         ],
     },
     {
-        name: "TikTok Bildungsprojekt Deutsch",
+        name: "TikTok Bildungsprojekt Deutsch: https://www.tiktok.com/@.b1758",
         startDate: "08.2025",
         endDate: "11.2025",
     },

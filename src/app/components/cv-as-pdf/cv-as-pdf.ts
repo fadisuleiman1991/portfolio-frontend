@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { myCV } from '../../data/myCV';
 
 @Component({
   selector: 'app-cv-as-pdf',
@@ -7,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrl: './cv-as-pdf.scss',
 })
 export class CvAsPDF {
+  protected readonly myCV = myCV;
 
 }
