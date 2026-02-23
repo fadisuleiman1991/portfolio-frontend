@@ -172,11 +172,15 @@ export const myCV: CV = {
   ],
   languages: [
     {
-        name: "deutsch",
-        level: "verhandlungssicher",
+        name: "Deutsch",
+        level: "Fließend",
     },
     {
-        name: "arabisch",
+        name: "Englisch",
+        level: "Grundkenntnisse",
+    },
+    {
+        name: "Arabisch",
         level: "Muttersprache",
     },
   ],

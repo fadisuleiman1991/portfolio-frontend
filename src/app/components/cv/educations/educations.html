@@ -1,1 +1,17 @@
-<p>educations works!</p>
+<section id="educations" class="py-5">
+    <div class="container">
+        <h2 class="text-center section-title">Educations</h2>
+        <hr class="divider">
+        <div>
+            <div class="card shadow-sm mb-3">
+                <div class="card-body">
+                    <div class="row">
+                        @for (education of educations; track education) {
+                        <span>{{ education.name }} ({{education.degree}}) | {{ education.institution }} | {{ education.startDate }} - {{ education.endDate }}</span>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

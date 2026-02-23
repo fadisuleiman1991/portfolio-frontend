@@ -1,1 +1,17 @@
-<p>languages works!</p>
+<section id="languages" class="py-5">
+    <div class="container">
+        <h2 class="text-center section-title">Languages</h2>
+        <hr class="divider">
+        <div>
+            <div class="card shadow-sm mb-3">
+                <div class="card-body">
+                    <div class="row">
+                        @for (language of languages; track language) {
+                        <span>{{ language.name }}: {{language.level}}</span>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,1 +1,17 @@
-<p>trainings works!</p>
+<section id="trainings" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center section-title">Trainings</h2>
+        <hr class="divider">
+        <div>
+            <div class="card shadow-sm mb-3">
+                <div class="card-body">
+                    <div class="row">
+                        @for (training of trainings; track training) {
+                        <span>{{ training.name }} | {{ training.institution }} | {{ training.startDate }} - {{ training.endDate }}</span>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

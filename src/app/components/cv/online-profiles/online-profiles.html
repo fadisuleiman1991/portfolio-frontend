@@ -1,1 +1,17 @@
-<p>online-profiles works!</p>
+<section id="onlineProfiles" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center section-title">Online-Profiles</h2>
+        <hr class="divider">
+        <div>
+            <div class="card shadow-sm mb-3">
+                <div class="card-body">
+                    <div class="row">
+                        @for (onlineProfile of onlineProfiles; track onlineProfile) {
+                        <span>{{ onlineProfile.name }}: <a [href]="onlineProfile.link" target="_blank">{{onlineProfile.link}}</a></span>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
