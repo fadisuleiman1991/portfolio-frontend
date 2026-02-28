@@ -12,7 +12,7 @@ export const myCV: CV = {
     profileImage: "src/profileImage.jpg",
   },
   contact: {
-    email: "fadi.sle@gmail.com",
+    email: "fadi.suleiman.de@gmail.com",
     phone: "+49 1577 3594045",
     city: "Duisburg",
     country: "Germany",

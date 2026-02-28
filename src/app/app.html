@@ -1,8 +1,7 @@
 <app-header></app-header>
 <div>
     <app-hero></app-hero>
-    <app-about [personalInformation]=myCV.personalInfo [contact]=myCV.contact></app-about>
-    <app-contact></app-contact>
+    <app-contacts [personalInformation]=myCV.personalInfo [contact]=myCV.contact></app-contacts>
     <app-skills [skills]=myCV.skills></app-skills>
     <app-experiences [experiences]=myCV.experiences></app-experiences>
     <app-projects [projects]="myCV.projects"></app-projects>
