@@ -1,5 +1,5 @@
 <div class="page">
-  <h2>Persönliche Daten</h2>
+  <h6>Persönliche Daten</h6>
   <ul>
     <li>Name: {{myCV.personalInfo.name}}</li>
     <li>Beruf: {{myCV.personalInfo.jobTitle}}</li>
@@ -8,7 +8,7 @@
     <li>E-Mail: {{myCV.contact.email}}</li>
   </ul>
 
-  <h2>Technologien & Tools</h2>
+  <h6>Technologien & Tools</h6>
   <ul>
     @for (skill of myCV.skills; track skill) {
     <li>{{skill.name}}: {{skill.content}}
@@ -16,7 +16,7 @@
     }
   </ul>
 
-  <h2>Berufserfahrung</h2>
+  <h6>Berufserfahrung</h6>
   <ul>
     @for (experience of myCV.experiences; track experience) {
     <li>
@@ -31,7 +31,7 @@
     }
   </ul>
 
-  <h2>Projekte (Auswahl)</h2>
+  <h6>Projekte (Auswahl)</h6>
   <ul>
     @for (project of myCV.projects; track project) {
     <li>
@@ -45,28 +45,28 @@
   }
   </ul>
 
-  <h2>Weitere Aktivitäten (Hobbys)</h2>
+  <h6>Weitere Aktivitäten (Hobbys)</h6>
   <ul>
     @for (activity of myCV.activities; track activity) {
     <li>{{activity.name}}</li>
     }
   </ul>
 
-  <h2>Online-Profile</h2>
+  <h6>Online-Profile</h6>
   <ul>
     @for (onlineProfile of myCV.onlineProfiles; track onlineProfile) {
     <li>{{onlineProfile.name}}: <a [href]="onlineProfile.link" target="_blank">{{onlineProfile.link}}</a></li>
     }
   </ul>
 
-  <h2>Sprachen</h2>
+  <h6>Sprachen</h6>
   <ul>
     @for (language of myCV.languages; track language) {
     <li>{{language.name}}: {{language.level}}</li>
     }
   </ul>
 
-  <h2>Weiterbildungen & Schulungen</h2>
+  <h6>Weiterbildungen & Schulungen</h6>
   <ul>
     @for (training of myCV.trainings; track training) {
     <li>
@@ -76,7 +76,7 @@
     }
   </ul>
 
-  <h2>Bildung</h2>
+  <h6>Bildung</h6>
   <ul>
     @for (education of myCV.educations; track education) {
     <li>

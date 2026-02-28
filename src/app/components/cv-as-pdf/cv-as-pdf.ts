@@ -9,5 +9,4 @@ import { myCV } from '../../data/myCV';
 })
 export class CvAsPDF {
   protected readonly myCV = myCV;
-
 }

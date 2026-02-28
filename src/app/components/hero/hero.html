@@ -5,14 +5,17 @@
         <img src="https://fadisuleiman.com/storage/profile-image.jpg" alt="Profile" class="img-fluid" width="120">
       </div>
       <div class="col-lg-6">
-        <h1 class="display-4 fw-bold">Hi, I'm Fadi Suleiman</h1>
-        <p class="lead">Web Developer (Entwickler)</p>
-        <p class="mb-4">Passionate about creating amazing web experiences with modern technologies.</p>
-        <a href="https://fadisuleiman.com/storage/CV.pdf" target="_blank" class="btn btn-outline-light btn-lg">
-          Open CV
-        </a>
-
+        <h1 class="display-4 fw-bold">Hallo, Ich bin Fadi Suleiman</h1>
+        <p class="lead">Web Entwickler</p>
+        <p class="mb-4">der mit Leidenschaft herausragende Web-Erlebnisse mit modernen Technologien entwickelt.</p>
+        <button target="_blank" class="btn btn-outline-light btn-lg me-4" (click)="openPDF()">
+          Lebenslauf öffnen
+        </button>
+        <button target="_blank" class="btn btn-outline-light btn-lg" (click)="downloadPDF()">
+          Lebenslauf herunterladen
+        </button>
       </div>
     </div>
   </div>
 </section>
+<app-cv-as-pdf id="pdfContent"></app-cv-as-pdf>
